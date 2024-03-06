@@ -21,7 +21,7 @@
     'demo': [],
     'qweb': [],
     'images': ['static/description/icon.png'],
-    'license': 'OEEL-1',
+    'license': 'OPL-1',
     "auto_install": False,
     "application": False,    
 }
