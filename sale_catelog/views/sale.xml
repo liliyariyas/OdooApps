@@ -1,0 +1,12 @@
+<odoo>
+	<record id="sale_form_inherit_catelog_view" model="ir.ui.view">
+		<field name="name">sale.order.form</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form"/>
+		<field name="arch" type="xml">
+			<field name="order_line" position="before">
+				<button name="action_view_material" type="object" string="Catelog" attrs="{'invisible': [('state', 'in', ['sale','cancel','done'])]}"/>
+			</field>
+		</field>
+	</record>
+</odoo>
